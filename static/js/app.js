@@ -120,5 +120,5 @@ function getPlots(id) {
 			getDemoInfo(data.names[0]);
 		});
 	}
-	
+
 	init();
