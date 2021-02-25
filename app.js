@@ -1,6 +1,6 @@
 function getPlots(sample_id) {
 	//Read samples.json
-		d3.json("./static/data/samples.json").then (sampledata =>{
+		d3.json("samples.json").then (sampledata =>{
 			console.log(sampledata)
 			var result_ids = sampledata.samples.filter(row => row.id === sample_id)[0]
 			console.log(result_ids.sample_values+"This is result ids")
@@ -77,7 +77,7 @@ function getPlots(sample_id) {
 	// create the function to get the necessary data
 	function getDemoInfo(id) {
 	// read the json file to get data
-		d3.json("./static/data/samples.json").then((data)=> {
+		d3.json("samples.json").then((data)=> {
 	// get the metadata info for the demographic panel
 			var metadata = data.metadata;
 	
